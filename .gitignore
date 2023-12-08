@@ -17,7 +17,14 @@ gradle-app.setting
 # Eclipse Gradle plugin generated files
 # Eclipse Core
 .project
+.settings
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
-**/.credencials
+# Ignore Gradle build output directory
+build
+bin
+
+# secrets
+**/.credencials/*.properties
+**/.credencials/*.yml
